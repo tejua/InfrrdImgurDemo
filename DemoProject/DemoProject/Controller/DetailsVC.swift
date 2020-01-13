@@ -69,37 +69,3 @@ extension DetailsVC: UICollectionViewDelegate {
         }
     }
 }
-
-// In CollectiionViewCell add tableview delegates
-extension CollectionCellTableView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let imageData = inputImageData.images?.first else {
-            return UIView()
-        }
-        print("images" , inputImageData.images?.toJSON())
-        let head = ImageTableHeaderView(tableView: tableView, imageData: imageData)
-        return head
-    }
-
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return tableView.frame.width + 50
-    }
-}
-
-// In CollectiionViewCell add tableview datasource
-extension CollectionCellTableView: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return commentObj.commentData.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(type: ImageCommentCell.self)
-        if indexPath.row == 0 {
-            cell.topAddCommentView.isHidden = false
-        } else {
-            cell.topAddCommentView.isHidden = true
-        }
-        cell.setData(data: commentObj.commentData[indexPath.row])
-        return cell
-    }
-}
