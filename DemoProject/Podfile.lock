@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - AnimatedField (2.2.0)
+  - ObjectMapper (3.5.1)
+  - SVProgressHUD (2.2.5)
+  - SwiftyGif (5.2.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.5)
+  - AnimatedField
+  - ObjectMapper
+  - SVProgressHUD
+  - SwiftyGif
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AnimatedField
+    - ObjectMapper
+    - SVProgressHUD
+    - SwiftyGif
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  AnimatedField: d502b7cafcc6cd6a3b16835c68c20e44c15d7704
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: cf05d1996847e526510d9e7131e34ca26ef325fc
+
+COCOAPODS: 1.7.1
