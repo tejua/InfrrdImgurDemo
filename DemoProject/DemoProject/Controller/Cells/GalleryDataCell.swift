@@ -35,7 +35,7 @@ class GalleryDataCell: UICollectionViewCell {
                 imgIcon.setImageFrom(url: imgUrl)
             }
         }
-        imgIcon.backgroundColor = .red
+        imgIcon.backgroundColor = .clear
         imgIcon.roundCorners(corners: [.topLeft, .topRight], radius: 5.0)
         lblTitle.text = data.title
         if let points = data.points {
